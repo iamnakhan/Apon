@@ -1,0 +1,942 @@
+/*===============================================
+               commonm css strat
+===============================================*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+li {
+	list-style: none;
+	margin-bottom: 0 !important;
+}
+
+a,
+a:hover,
+a:focus {
+	text-decoration: none;
+}
+
+.container {
+	width: 1320px;
+	margin: 0 auto;
+}
+
+.clr {
+	clear: both;
+}
+
+.main {
+	display: flex;
+}
+
+.title {
+	text-align: center;
+	/*	margin-top: 50px;*/
+
+
+
+
+}
+
+.title h3 {
+	position: relative;
+	font-family: 'Raleway', sans-serif;
+	font-size: 34px;
+	font-weight: 700;
+	text-transform: uppercase;
+
+}
+
+.title h3:after {
+	position: absolute;
+	bottom: -23px;
+	left: 50%;
+	width: 122px;
+	height: 2px;
+	background: #000;
+	content: "";
+	transform: translate(-50%, -50%);
+
+}
+
+.title h3:before {
+	position: absolute;
+	bottom: -30px;
+	left: 50%;
+	width: 132px;
+	height: 2px;
+	background: #000;
+	content: "";
+	transform: translate(-50%, -50%);
+
+
+}
+
+.title .icon {
+	width: 35px;
+	height: 35px;
+	background: #fff;
+	z-index: 2;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 15px;
+
+}
+
+.title .icon i {
+
+	transform: rotate(-45deg);
+	font-size: 25px;
+}
+
+/*===============================================
+               commonm css end
+===============================================*/
+/*===============================================
+               nav-part strat
+===============================================*/
+nav {
+	position: absolute;
+	top: 60px;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+
+}
+
+nav .logo {
+	width: 20%;
+}
+
+nav .nav-items {
+	width: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+nav .nav-items ul li {
+	display: inline-block;
+	margin-left: 15px;
+}
+
+nav .nav-items ul li a {
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	position: relative;
+	transition: .4s;
+}
+
+nav .nav-items ul li a:hover {
+	color: #744fa0;
+}
+
+nav .nav-items ul li a:after {
+	position: absolute;
+	bottom: -15px;
+	left: 0;
+	width: 0;
+	height: 1px;
+	content: "";
+	background: #744fa0;
+	transition: .4s;
+}
+
+nav .nav-items ul li a:hover:after {
+	width: 100%
+}
+
+nav .nav-items ul li .active {
+	color: #744fa0;
+}
+
+nav .nav-items ul li .active:after {
+	width: 30%;
+}
+
+
+nav .btn {
+	width: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+nav .btn a {
+	display: inline-block;
+	background: #744fa0;
+	padding: 10px 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	color: #fff;
+
+}
+
+/*===============================================
+               nav-part end
+===============================================*/
+/*===============================================
+               bannar-part start
+===============================================*/
+#banner-part {
+	position: relative;
+}
+
+#banner-part .banner-slider .banner {
+	background: url(../images/bannar.png) no-repeat center;
+	background-size: cover;
+
+}
+
+#banner-part .banner-slider .banner .overlay {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .6);
+	text-align: right;
+	padding-top: 150px;
+	padding-bottom: 130px;
+}
+
+#banner-part .banner-slider .banner .overlay h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 56px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+
+}
+
+#banner-part .banner-slider .banner .overlay h1:first-letter {
+	color: #744fa0;
+}
+
+#banner-part .banner-slider .banner .overlay h3 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 32px;
+	font-weight: 400;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 60px;
+	position: relative;
+}
+
+#banner-part .banner-slider .banner .overlay h3:after {
+	position: absolute;
+	bottom: -30px;
+	right: 0;
+	width: 200px;
+	height: 1px;
+	background: #fff;
+	content: "";
+
+
+}
+
+#banner-part .banner-slider .banner .overlay p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	width: 470px;
+	margin-left: auto;
+	line-height: 20px;
+}
+
+#banner-part .banner-slider .banner .overlay a {
+	display: inline-block;
+	color: #fff;
+	background: #744fa0;
+	text-align: left;
+	position: relative;
+	border-radius: 5px;
+	padding: 10px 10px;
+	margin-top: 50px;
+	margin-left: 10px;
+	transition: .5s;
+}
+
+#banner-part .banner-slider .banner .overlay a:hover {
+	background: #f1f1f1;
+	color: #353535;
+}
+
+#banner-part .banner-slider .banner .overlay a i {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	font-size: 33px;
+}
+
+#banner-part .banner-slider .banner .overlay a span {
+	padding-left: 50px;
+}
+
+#banner-part .banner-slider .banner .overlay .on {
+	display: block;
+	font-size: 14px;
+}
+
+#banner-part .banner-slider .banner .overlay .store {
+	font-family: 'Raleway', sans-serif;
+	font-size: 25px;
+	font-weight: 700;
+	display: block;
+}
+
+#banner-part .slick-dots {
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translatey(-50%)
+}
+
+#banner-part .slick-dots li button {
+	font-size: 0;
+	width: 12px;
+	height: 12px;
+	border: 3px solid white;
+	border-radius: 50%;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+
+}
+
+#banner-part .slick-dots li button:after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	width: 6px;
+	height: 6px;
+	background: white;
+	content: "";
+	opacity: 0;
+
+}
+
+#banner-part .slick-dots .slick-active button {
+	border-color: #744fa0;
+}
+
+#banner-part .slick-dots .slick-active button:after {
+	background: #744fa0;
+	opacity: 1;
+}
+
+#banner-part .home {
+	position: absolute;
+	top: 44%;
+	right: 20px;
+	font-size: 12px;
+	transform: translatey(-50%);
+	z-index: 1;
+	color: #fff;
+
+}
+
+/*===============================================
+               bannar-part end
+===============================================*/
+/*===============================================
+              about-part start
+===============================================*/
+#about-us {
+	margin-top: 50px;
+}
+
+
+
+#about-us .item-one {
+	width: 70%;
+	text-align: center;
+}
+
+#about-us .item-one p {
+	width: 570px;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: 'Raleway', sans-serif;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+
+#about-us .item-two {
+	width: 30%;
+	text-align: right;
+}
+
+/*===============================================
+              about-part end
+===============================================*/
+/*===============================================
+              awesome-part start
+===============================================*/
+#awesome-part {
+	background: #f1f1f1;
+	padding: 50px 0;
+}
+
+#awesome-part .main {
+	margin-top: 15px;
+}
+
+#awesome-part .title .icon {
+	background: #f1f1f1;
+}
+
+#awesome-part .left {
+	width: 30%;
+}
+
+#awesome-part .right {
+	width: 70%;
+}
+
+#awesome-part .left button {
+	text-align: left;
+	margin-bottom: 35px;
+	position: relative;
+}
+
+#awesome-part .left .active {
+	background: transparent;
+	color: #744fa0;
+
+}
+
+#awesome-part .left button:after {
+	position: absolute;
+	bottom: -15px;
+	left: 0;
+	width: 200px;
+	height: 1px;
+	background: #000;
+	content: "";
+	transition: .5s;
+
+
+}
+
+#awesome-part .left .active:after {
+	width: 300px;
+	background: #744fa0;
+}
+
+#awesome-part .left button span {
+	display: block;
+	color: #000;
+	margin-left: 25px;
+}
+
+#awesome-part .left button i {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	font-size: 30px;
+}
+
+#awesome-part .left .phone {
+	font-size: 18px;
+	font-weight: 700;
+	font-family: 'Raleway', sans-serif;
+
+}
+
+#awesome-part .left button:last-child::after {
+	width: 0;
+}
+
+#awesome-part .right h3 {
+	font-size: 18px;
+	font-weight: 700;
+	font-family: 'Raleway', sans-serif;
+	margin-top: 70px;
+}
+
+#awesome-part .right .text {
+	text-align: right;
+	margin-left: auto;
+}
+
+#awesome-part .right p {
+	width: 385px;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: 'Raleway', sans-serif;
+}
+
+/*===============================================
+              awesome-part end
+===============================================*/
+/*===============================================
+              screenhot-part start
+===============================================*/
+#screenshot-part {
+	padding: 50px 0;
+}
+
+#screenshot-part .shot-item {
+	width: 210px!important;
+	height: 350px;
+	
+}
+
+#screenshot-part .shot-item img {
+	width: 100%;
+	height: 100%;
+}
+#screenshot-part .shot-item  .serial{
+	width:100px;
+	margin:0 auto;
+}
+#screenshot-part .shot-item .serial h1 {
+	background: #f1f1f1;
+	color: #353535;
+	font-size: 25px;
+	font-weight: 700;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	padding:10px 0;
+}
+
+/*===============================================
+              screenhot-part end
+===============================================*/
+/*===============================================
+              vedio part start
+===============================================*/
+#vedio-part {
+	padding: 50px 0;
+}
+
+#vedio-part .vedio {
+	background: url(../images/vedio-part-image.png) no-repeat center;
+	background-size: cover;
+	margin-top: 20px;
+
+}
+
+#vedio-part .vedio .overlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0, 0, 0, .4);
+	text-align: center;
+	padding: 205px 0;
+	font-size: 60px;
+}
+
+#vedio-part .vedio .overlay a {
+	color: #fff;
+}
+
+/*===============================================
+              vedio part end
+===============================================*/
+/*===============================================
+              pricing part start
+===============================================*/
+#pricing-part {
+	padding: 50px 0;
+
+}
+
+#pricing-part .main {
+	justify-content: space-between;
+}
+
+#pricing-part .item {
+	width: 24%;
+	border: 1px solid #f1f1f1;
+	border-radius: 20px;
+
+
+}
+
+#pricing-part .item .top {
+	text-align: center;
+}
+
+#pricing-part .item .top h3 {
+	background: #f1f1f1;
+	color: #353535;
+	padding: 20px 0;
+	font-size: 25px;
+	font-weight: 700;
+	font-family: 'Raleway', sans-serif;
+	transition: .4s;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+#pricing-part .item .round {
+	width: 105px;
+	height: 105px;
+	border: 2px solid #f1f1f1;
+	border-radius: 50%;
+	line-height: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 15px auto;
+}
+
+#pricing-part .item .round p {
+	font-size: 12px;
+	font-weight: 700;
+	font-family: 'Raleway', sans-serif;
+}
+
+#pricing-part .item .round span {
+	font-size: 50px;
+}
+
+#pricing-part .item .list ul {
+	background: #f1f1f1;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	text-align: center;
+
+}
+
+#pricing-part .item .list ul li {
+	padding-bottom: 10px;
+	margin-left: -28px;
+}
+
+#pricing-part .item .button {
+	background: #f1f1f1;
+	text-align: center;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+#pricing-part .item .button a {
+	font-family: 'Raleway', sans-serif;
+	display: inline-block;
+	color: #000;
+	background: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-weight: 700;
+	font-size: 14px;
+	border: 1px solid #353535;
+	transition: .4s;
+	transform: translateY(50%);
+}
+
+#pricing-part .item:hover h3 {
+	background: #744fa0;
+	color: #fff;
+}
+
+#pricing-part .item:hover a {
+	background: #744fa0;
+	color: #fff;
+	border: 1px solid #744fa0;
+}
+
+/*===============================================
+              pricing part end
+===============================================*/
+/*===============================================
+              team part start
+===============================================*/
+#team-part {
+	padding: 50px 0;
+}
+
+#team-part .team-members {
+	width: 370px !important;
+	height: 430px;
+	margin: 85px 0;
+	transition: .4s;
+
+}
+
+#team-part .team-members .member-img {
+	width: 100%;
+	height: 100%;
+	background: url(../images/team-part-image.png) no-repeat center;
+	background-size: cover;
+	border-radius: 15px;
+
+}
+
+#team-part .team-members .member-img .member-img-overlay {
+	width: 100%;
+	height: 100%;
+	background: rgb(0, 0, 0, .5);
+	border-radius: 15px;
+	position: relative;
+	opacity: 0;
+	transition: .4s;
+
+
+}
+
+#team-part .team-members .member-img .member-img-overlay .overlay-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#team-part .team-members .member-img .member-img-overlay .overlay-icon i {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	line-height: 50px;
+	text-align: center;
+	color: #000;
+	background: #fff;
+	font-size: 25px;
+	transition: .5s;
+	margin: 0 3px;
+}
+
+#team-part .team-members .member-img .member-img-overlay .overlay-icon i:hover {
+	color: #fff;
+	background: #1da1f2;
+}
+
+#team-part .team-members .text {
+	width: 100%;
+	height: 175;
+	border: 1px solid #cccccc;
+	border-radius: 0 0 15px 15px;
+	border-top: none;
+	margin-top: -175px;
+	text-align: center;
+	opacity: 0;
+	transition: .4s;
+}
+
+#team-part .team-members .text h2 {
+	padding-top: 10px;
+	font-size: 18px;
+	font-weight: 700;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+}
+
+#team-part .team-members .text h1 {
+	font-size: 14px;
+	font-weight: 700;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+}
+
+#team-part .team-members .text p {
+	width: 270px;
+	margin: 0 auto;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: 'Raleway', sans-serif;
+}
+
+#team-part .team-members:hover {
+	margin: 0 0;
+
+}
+
+#team-part .team-members:hover .member-img .member-img-overlay {
+	opacity: 1;
+	border-radius: 15px 15px 0 0;
+}
+
+#team-part .team-members:hover .text {
+	margin-top: 0;
+	opacity: 1;
+}
+
+/*===============================================
+              team part end
+===============================================*/
+
+/*===============================================
+              feedback part start
+===============================================*/
+#feedback-part {
+	background: url(../images/user-part.png) no-repeat center;
+	background-size: cover;
+
+
+}
+
+#feedback-part .feedback-overlay {
+	width: 100%;
+	height: 100%;
+	background: rgb(0, 0, 0, .7);
+	padding: 85px 0;
+}
+
+#feedback-part .feedback-overlay .shape-text {
+	position: relative;
+}
+
+#feedback-part .feedback-overlay .shape-text .shape {
+	width: 40px;
+	height: 40px;
+	border-radius: 10px;
+	position: absolute;
+	bottom: 3px;
+	left: 50%;
+	background: #fff;
+	z-index: 1;
+	transform: translate(-50%, 50%) rotate(-45deg);
+}
+
+#feedback-part .feedback-overlay .shape-text .text-slider {
+	width: 800px;
+	background: #fff;
+	margin: 0 auto;
+	text-align: center;
+	padding: 30px 70px;
+	border-radius: 15px;
+}
+
+#feedback-part .feedback-overlay .feedback-img {
+	width: 380px;
+	margin: 30px auto;
+
+}
+
+
+
+#feedback-part .feedback-overlay .feedback-img .member {
+	width: 100px !important;
+	height: 100px;
+	position: relative;
+	margin: 40px 10px;
+	overflow: hidden;
+	border-radius: 50%;
+
+}
+
+#feedback-part .feedback-overlay .feedback-img .member img {
+	width: 100%;
+	height: 100%;
+
+}
+
+#feedback-part .feedback-overlay .feedback-img .member .img-overlay {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: rgb(255, 255, 255, .4);
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+
+#feedback-part .feedback-overlay .slick-center {
+	transform: scale(1.2);
+}
+
+#feedback-part .feedback-overlay .slick-center .img-overlay {
+	opacity: 0;
+}
+
+/*===============================================
+              feedback part end
+===============================================*/
+/*===============================================
+              contact part start
+===============================================*/
+#contact-part {
+	padding: 100px 0;
+}
+
+#contact-part form {
+	margin-top: 50px;
+}
+
+#contact-part .main {
+	justify-content: space-between;
+	align-items: center;
+}
+
+#contact-part input {
+	width: 412px;
+	border: 2px solid #000;
+	border-radius: 10px;
+	padding: 15px;
+}
+
+#contact-part textarea {
+	width: 100%;
+	height: 200px;
+	margin-top: 25px;
+	border: 2px solid #000;
+	border-radius: 10px;
+	padding: 15px;
+}
+
+#contact-part button {
+	width: 75px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	background: #744fa0;
+	color: #fff;
+	margin-left: 48%;
+	text-align: center;
+	padding: 5px 10px;
+	margin-top: 25px;
+}
+
+/*===============================================
+              contact part end
+===============================================*/
+/*===============================================
+             footer part end
+===============================================*/
+#footer-part {
+	background: #353535;
+	text-align: center;
+	padding: 20px 0;
+}
+
+#footer-part .icon {
+	text-align: center;
+	margin-top: 50px;
+}
+
+#footer-part .icon i {
+	width: 60px;
+	height: 60px;
+	border-radius: 60%;
+	background: #fff;
+	color: #000;
+	line-height: 60px;
+	margin: 0 10px;
+	font-size: 30px;
+	color: #000;
+	transition: .4s;
+}
+
+#footer-part .copy-right p {
+	color: #fff;
+	font-size: 15px;
+	font-weight: 400;
+	margin-top: 20px;
+}
+
+#footer-part .icon i:hover {
+	color: #fff;
+	background: #1da1f2;
+}
+
+/*===============================================
+              contact part end
+===============================================*/
